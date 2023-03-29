@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="StatusGuard.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>StatusGuard</h1>
+    <form id="startForm">
+      <label for="passwordOrPhrase">Velg passord:</label>
+      <input type="text" id="passwordOrPhrase" placeholder="Velg passord" required />
+      <br />
+      <label for="timelimit">Tid før passord må skrives på nytt:</label>
+      <input type="text" id="timelimit" placeholder="Ex: 10s, 2m, 1h, 1d" required />
+      <br />
+      <button type="submit">Start</button>
+    </form>
+    <input type="text" id="keyInput" placeholder="Skriv inn valgt passord" />
+    <button id="submitKey">Godkjenn</button>
+    <p id="countdown"></p>
+  </body>
+  <script src="StatusGuard.js"></script>
 </html>
