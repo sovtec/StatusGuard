@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+}
+
+h1 {
+  margin-left: 75px;
+  margin-top: 20px;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.velgPassordForm,
+.velgTidForm,
+.passwordInput {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(83, 78, 78);
+  color: #edf0f1;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 2px;
+  margin-left: 10px;
+  font-size: 1rem;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.velgPassordTitle {
+  color: #edf0f1;
+  margin-left: 30px;
+  margin-bottom: 2px;
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+.mainForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  color: #edf0f1;
+}
+
+.startBtn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  font-size: 17px;
+  color: #edf0f1;
+  text-decoration: none;
+  max-width: 40%;
+  margin-left: 95px;
+  margin-top: 20px;
+}
+
+.godkjennBtn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  font-size: 14px;
+  color: #edf0f1;
+  text-decoration: none;
+  max-width: 40%;
+  margin-left: 5px;
+}
+
+.countdownDisplay {
+  color: #d63a3a;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+}

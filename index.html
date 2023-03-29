@@ -10,18 +10,39 @@
   </head>
   <body>
     <h1>StatusGuard</h1>
-    <form id="startForm">
-      <label for="passwordOrPhrase">Velg passord:</label>
-      <input type="text" id="passwordOrPhrase" placeholder="Velg passord" required />
-      <br />
-      <label for="timelimit">Tid før passord må skrives på nytt:</label>
-      <input type="text" id="timelimit" placeholder="Ex: 10s, 2m, 1h, 1d" required />
-      <br />
-      <button type="submit">Start</button>
-    </form>
-    <input type="text" id="keyInput" placeholder="Skriv inn valgt passord" />
-    <button id="submitKey">Godkjenn</button>
-    <p id="countdown"></p>
+    <div class="mainFormContainer">
+      <form class="mainForm" id="startForm">
+        <label for="passwordOrPhrase"></label>
+        <input
+          class="velgPassordForm"
+          type="text"
+          id="passwordOrPhrase"
+          placeholder="Velg passord"
+          required
+        />
+        <label class="velgPassordTitle" for="timelimit"
+          >Tid før passord må skrives på nytt:</label
+        >
+        <input
+          class="velgTidForm"
+          type="text"
+          id="timelimit"
+          placeholder="Ex: 10s, 2m, 1h, 1d"
+          required
+        />
+        <button class="startBtn" type="submit">Start</button>
+      </form>
+    </div>
+    <div>
+      <input
+        class="passwordInput"
+        type="text"
+        id="keyInput"
+        placeholder="Skriv inn valgt passord"
+      />
+      <button class="godkjennBtn" id="submitKey">Godkjenn</button>
+    </div>
+    <p class="countdownDisplay" id="countdown"></p>
   </body>
   <script src="StatusGuard.js"></script>
 </html>
