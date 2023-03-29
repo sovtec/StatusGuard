@@ -9,66 +9,72 @@
     <title>StatusGuard</title>
   </head>
   <body>
-    <div class="mainContainer"></div>
-    <h1>StatusGuard</h1>
-    <div class="mainFormContainer">
-      <form class="mainForm" id="startForm">
-        <label for="passwordOrPhrase"></label>
+    <div class="mainContainer">
+      <h1>StatusGuard</h1>
+        <form class="mainForm" id="startForm">
+          <label for="passwordOrPhrase"></label>
+          <input
+            class="velgPassordForm"
+            type="text"
+            id="passwordOrPhrase"
+            placeholder="Velg passord"
+            required
+          />
+          <label class="velgPassordTitle" for="timelimit"
+            >Tid før passord må skrives på nytt:</label
+          >
+          <input
+            class="velgTidForm"
+            type="text"
+            id="timelimit"
+            placeholder="Ex: 10s, 2m, 1h, 1d"
+            required
+          />
+          <button class="startBtn" type="submit">Start</button>
+        </form>
+      <div class="registrerSvarContainer">
         <input
-          class="velgPassordForm"
+          class="passwordInput"
           type="text"
-          id="passwordOrPhrase"
-          placeholder="Velg passord"
-          required
+          id="keyInput"
+          placeholder="Skriv inn valgt passord"
         />
-        <label class="velgPassordTitle" for="timelimit"
-          >Tid før passord må skrives på nytt:</label
-        >
-        <input
-          class="velgTidForm"
-          type="text"
-          id="timelimit"
-          placeholder="Ex: 10s, 2m, 1h, 1d"
-          required
-        />
-        <button class="startBtn" type="submit">Start</button>
-      </form>
-    </div>
-    <div>
-      <input
-        class="passwordInput"
-        type="text"
-        id="keyInput"
-        placeholder="Skriv inn valgt passord"
-      />
-      <button class="godkjennBtn" id="submitKey">Godkjenn</button>
-    </div>
-    <p class="countdownDisplay" id="countdown"></p>
-    <div class="infoContainer">
-      <div class="infoContent">
-        <div class="infoContentText">
-          "This web application asks users to enter a specific phrase within a
-          predetermined window of time in order to periodically check if they
-          are still alive and responsive.
-          <br /><br />
-          <div>
-            The application sends a notification to a Discord webhook, if the
-            user does not enter the target phrase within the set time. If this
-            happens, the application will assume that the user may be in trouble
-            or is unresponsive..
-            <br /><br /><br />
-            <div class="infoInfo">This description is written by AI</div>
+        <button class="godkjennBtn" id="submitKey">Godkjenn</button>
+      </div>
+      <p class="countdownDisplay" id="countdown"></p>
+      <div class="infoContainer">
+        <div class="infoContent">
+          <div class="infoContentText">
+            "This web application asks users to enter a specific phrase within a
+            predetermined window of time in order to periodically check if they
+            are still alive and responsive.
             <br /><br />
-          </div>
-          <div class="sourceDiv">
-            Source:
-            <a href="https://github.com/sovtec/StatusGuard" class="sourceCode">
-              https://github.com/sovtec/StatusGuard</a
-            >
+            <div>
+              The application sends a notification to a Discord webhook, if the
+              user does not enter the target phrase within the set time. If this
+              happens, the application will assume that the user may be in
+              trouble or is unresponsive..
+              <br /><br /><br />
+              <div class="infoInfo">This description is written by AI</div>
+              <br /><br />
+            </div>
+            <div class="sourceDiv">
+              Source:
+              <a
+                href="https://github.com/sovtec/StatusGuard"
+                class="sourceCode"
+              >
+                https://github.com/sovtec/StatusGuard</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="StatusGuard.js"></script>
+  <script src="/src/StatusGuard.js"></script>
+  <script src="/src/functions/sendToWebHookFunction.js"></script>
+  <script src="/src/functions/convertTimeFunction.js"></script>
+  <script src="/src/functions/updateCountdownFunction.js"></script>
+  <script src="/src/webHookURL.js"></script>
 </html>
