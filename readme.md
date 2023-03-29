@@ -13,3 +13,8 @@
 This application can be used in a variety of situations where it's necessary to continuously monitor someone's presence or well-being
 </p>
 <hr>
+
+
+<p align="center">
+    <img src="https://i.imgur.com/slh2C7M.png" width="1000">
+</p>
