@@ -9,6 +9,7 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="mainContainer"></div>
     <h1>StatusGuard</h1>
     <div class="mainFormContainer">
       <form class="mainForm" id="startForm">
@@ -46,19 +47,28 @@
     <div class="infoContainer">
       <div class="infoContent">
         <div class="infoContentText">
-          This web application asks users to enter a specific phrase within a
+          "This web application asks users to enter a specific phrase within a
           predetermined window of time in order to periodically check if they
-          are still alive and responsive. The application sends a notification
-          to a Discord webhook, if the user does not enter the target phrase
-          within the set time. If this happens, the application assumes that the
-          user may be in trouble or unresponsive. This application can be used
-          in a variety of situations where it's necessary to continuously
-          monitor someone's presence or well-being
+          are still alive and responsive.
+          <br /><br />
+          <div>
+            The application sends a notification to a Discord webhook, if the
+            user does not enter the target phrase within the set time. If this
+            happens, the application will assume that the user may be in trouble
+            or is unresponsive.
+            <br /><br /><br />
+            <div class="infoInfo">This description is written by AI</div>
+            <br /><br />
+          </div>
+          <div class="sourceDiv">
+            Source:
+            <a href="https://github.com/sovtec/StatusGuard" class="sourceCode">
+              https://github.com/sovtec/StatusGuard</a
+            >
+          </div>
         </div>
       </div>
     </div>
-    <div class="sourceCodeTitle">Source:</div>
-    <a href="https://github.com/sovtec/StatusGuard" class="sourceCode">https://github.com/sovtec/StatusGuard</a>
   </body>
   <script src="StatusGuard.js"></script>
 </html>
