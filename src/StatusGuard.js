@@ -1,13 +1,8 @@
 //importerer funsjoner fra functions mappen
-/* import convertTimeLimitToMs from "/src/functions/convertTimeFunction.js"; */
 import { convertTimeLimitToMs } from "./functions/convertTimeFunction.js";
-/* import sendAlertToDiscordWebhook from "/src/functions/sendToWebHookFunction.js";
-import updateCountdownText from "./functions/updateCountdownFunction.js"; */
 import {sendAlertToDiscordWebhook} from "./functions/sendToWebHookFunction.js"
 import {updateCountdownText } from "./functions/updateCountdownFunction.js"
 
-//importerer webhookURL
-/* import { webhookURL } from "./webHookURL"; */
 
 const form = document.getElementById("startForm");
 form.addEventListener("submit", (event) => {
