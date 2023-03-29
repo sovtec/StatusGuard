@@ -1,5 +1,5 @@
 //Denne funsjonen konverterer tid
-function convertTimeLimitToMs(timeLimit) {
+export function convertTimeLimitToMs(timeLimit) {
     const unit = timeLimit.slice(-1);
     const value = parseInt(timeLimit.slice(0, -1));
   
