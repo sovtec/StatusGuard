@@ -13,9 +13,16 @@
             user does not enter the target phrase within the set time. If this
             happens, the application will assume that the user may be in trouble
             or is unresponsive.
+           
 </p>
 <p align="center">
 This application can be used in a variety of situations where it's necessary to continuously monitor someone's presence or well-being
+</p>
+
+
+<br><br>
+<p align="center">
+           This description was written by AI
 </p>
 <hr>
 
